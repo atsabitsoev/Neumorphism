@@ -28,5 +28,6 @@ struct ColorfulBackground<S: Shape>: View {
                     .shadow(color: Color.darkEnd, radius: 10, x: 10, y: 10)
             }
         }
+        .animation(isHighlighted ? .none : .easeInOut)
     }
 }
