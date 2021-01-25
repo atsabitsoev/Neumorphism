@@ -8,9 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isToggled = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            LinearGradient(.darkStart, .darkEnd)
+            
+            VStack(spacing: 40) {
+                Button(action: {
+                    print("tap")
+                }, label: {
+                    Image(systemName: "heart.fill")
+                        .foregroundColor(.white)
+                })
+                .buttonStyle(DarkButtonStyle())
+                
+                Toggle(isOn: $isToggled) {
+                    Image(systemName: "heart.fill")
+                        .foregroundColor(.white)
+                }
+                .toggleStyle(ColorfulToggleStyle())
+            }
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

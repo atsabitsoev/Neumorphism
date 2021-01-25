@@ -7,19 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC7928B625BF00F500FB453F /* DarkToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7928B525BF00F500FB453F /* DarkToggleStyle.swift */; };
+		AC7928BA25BF026A00FB453F /* ColorfulBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7928B925BF026A00FB453F /* ColorfulBackground.swift */; };
+		AC7928BD25BF02BC00FB453F /* ColorfulButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7928BC25BF02BC00FB453F /* ColorfulButtonStyle.swift */; };
+		AC7928C025BF02DE00FB453F /* ColorfulToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7928BF25BF02DE00FB453F /* ColorfulToggleStyle.swift */; };
 		ACC069B925B83E40000A0CB2 /* NeumorphismApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC069B825B83E40000A0CB2 /* NeumorphismApp.swift */; };
 		ACC069BB25B83E40000A0CB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC069BA25B83E40000A0CB2 /* ContentView.swift */; };
 		ACC069BD25B83E40000A0CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC069BC25B83E40000A0CB2 /* Assets.xcassets */; };
 		ACC069C025B83E40000A0CB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC069BF25B83E40000A0CB2 /* Preview Assets.xcassets */; };
+		ACC069C925B8407A000A0CB2 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC069C825B8407A000A0CB2 /* Color+Extensions.swift */; };
+		ACC069CD25B84252000A0CB2 /* SimpleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC069CC25B84252000A0CB2 /* SimpleButtonStyle.swift */; };
+		ACC069D025B8462A000A0CB2 /* LinearGradient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC069CF25B8462A000A0CB2 /* LinearGradient+Extensions.swift */; };
+		ACC069D325B84D7F000A0CB2 /* DarkBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC069D225B84D7F000A0CB2 /* DarkBackground.swift */; };
+		ACC069D625B84E89000A0CB2 /* DarkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC069D525B84E89000A0CB2 /* DarkButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC7928B525BF00F500FB453F /* DarkToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkToggleStyle.swift; sourceTree = "<group>"; };
+		AC7928B925BF026A00FB453F /* ColorfulBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulBackground.swift; sourceTree = "<group>"; };
+		AC7928BC25BF02BC00FB453F /* ColorfulButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulButtonStyle.swift; sourceTree = "<group>"; };
+		AC7928BF25BF02DE00FB453F /* ColorfulToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulToggleStyle.swift; sourceTree = "<group>"; };
 		ACC069B525B83E40000A0CB2 /* Neumorphism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neumorphism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC069B825B83E40000A0CB2 /* NeumorphismApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismApp.swift; sourceTree = "<group>"; };
 		ACC069BA25B83E40000A0CB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACC069BC25B83E40000A0CB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACC069BF25B83E40000A0CB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACC069C125B83E40000A0CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC069C825B8407A000A0CB2 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		ACC069CC25B84252000A0CB2 /* SimpleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleButtonStyle.swift; sourceTree = "<group>"; };
+		ACC069CF25B8462A000A0CB2 /* LinearGradient+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+Extensions.swift"; sourceTree = "<group>"; };
+		ACC069D225B84D7F000A0CB2 /* DarkBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkBackground.swift; sourceTree = "<group>"; };
+		ACC069D525B84E89000A0CB2 /* DarkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +51,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC7928C225BF02FA00FB453F /* ButtonStyles */ = {
+			isa = PBXGroup;
+			children = (
+				ACC069CC25B84252000A0CB2 /* SimpleButtonStyle.swift */,
+				ACC069D525B84E89000A0CB2 /* DarkButtonStyle.swift */,
+				AC7928BC25BF02BC00FB453F /* ColorfulButtonStyle.swift */,
+			);
+			path = ButtonStyles;
+			sourceTree = "<group>";
+		};
+		AC7928C425BF030100FB453F /* ToggleStyles */ = {
+			isa = PBXGroup;
+			children = (
+				AC7928B525BF00F500FB453F /* DarkToggleStyle.swift */,
+				AC7928BF25BF02DE00FB453F /* ColorfulToggleStyle.swift */,
+			);
+			path = ToggleStyles;
+			sourceTree = "<group>";
+		};
+		AC7928C625BF030900FB453F /* BackgroundStyles */ = {
+			isa = PBXGroup;
+			children = (
+				ACC069D225B84D7F000A0CB2 /* DarkBackground.swift */,
+				AC7928B925BF026A00FB453F /* ColorfulBackground.swift */,
+			);
+			path = BackgroundStyles;
+			sourceTree = "<group>";
+		};
+		AC7928C825BF031700FB453F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACC069C825B8407A000A0CB2 /* Color+Extensions.swift */,
+				ACC069CF25B8462A000A0CB2 /* LinearGradient+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		ACC069AC25B83E40000A0CB2 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +109,10 @@
 			children = (
 				ACC069B825B83E40000A0CB2 /* NeumorphismApp.swift */,
 				ACC069BA25B83E40000A0CB2 /* ContentView.swift */,
+				AC7928C825BF031700FB453F /* Extensions */,
+				AC7928C225BF02FA00FB453F /* ButtonStyles */,
+				AC7928C425BF030100FB453F /* ToggleStyles */,
+				AC7928C625BF030900FB453F /* BackgroundStyles */,
 				ACC069BC25B83E40000A0CB2 /* Assets.xcassets */,
 				ACC069C125B83E40000A0CB2 /* Info.plist */,
 				ACC069BE25B83E40000A0CB2 /* Preview Content */,
@@ -138,8 +197,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC069D625B84E89000A0CB2 /* DarkButtonStyle.swift in Sources */,
+				AC7928BA25BF026A00FB453F /* ColorfulBackground.swift in Sources */,
 				ACC069BB25B83E40000A0CB2 /* ContentView.swift in Sources */,
+				ACC069D325B84D7F000A0CB2 /* DarkBackground.swift in Sources */,
+				ACC069CD25B84252000A0CB2 /* SimpleButtonStyle.swift in Sources */,
 				ACC069B925B83E40000A0CB2 /* NeumorphismApp.swift in Sources */,
+				AC7928B625BF00F500FB453F /* DarkToggleStyle.swift in Sources */,
+				ACC069D025B8462A000A0CB2 /* LinearGradient+Extensions.swift in Sources */,
+				AC7928C025BF02DE00FB453F /* ColorfulToggleStyle.swift in Sources */,
+				ACC069C925B8407A000A0CB2 /* Color+Extensions.swift in Sources */,
+				AC7928BD25BF02BC00FB453F /* ColorfulButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
