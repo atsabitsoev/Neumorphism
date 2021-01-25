@@ -7,13 +7,19 @@
 
 import SwiftUI
 
-struct DarkButtonStyle: ButtonStyle {
+struct DarkButtonStyle<S: Shape>: ButtonStyle {
+    private let shape: S
+    
+    init(shape: S) {
+        self.shape = shape
+    }
+    
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .padding(30)
             .contentShape(Circle())
             .background(
-                DarkBackground(isHighlighted: configuration.isPressed, shape: Circle())
+                DarkBackground(isHighlighted: configuration.isPressed, shape: shape)
             )
             .animation(.none)
     }

@@ -7,13 +7,19 @@
 
 import SwiftUI
 
-struct ColorfulButtonStyle: ButtonStyle {
+struct ColorfulButtonStyle<S: Shape>: ButtonStyle {
+    private let shape: S
+    
+    init(shape: S) {
+        self.shape = shape
+    }
+    
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .padding(30)
             .contentShape(Circle())
             .background(
-                ColorfulBackground(isHighlighted: configuration.isPressed, shape: Circle())
+                ColorfulBackground(isHighlighted: configuration.isPressed, shape: shape)
             )
             .animation(.none)
     }

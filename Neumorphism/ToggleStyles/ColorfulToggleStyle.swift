@@ -7,7 +7,15 @@
 
 import SwiftUI
 
-struct ColorfulToggleStyle: ToggleStyle {
+struct ColorfulToggleStyle<S: Shape>: ToggleStyle {
+    private let shape: S
+    
+    
+    init(shape: S) {
+        self.shape = shape
+    }
+    
+    
     func makeBody(configuration: Self.Configuration) -> some View {
         Button(action: {
             configuration.isOn.toggle()

@@ -23,7 +23,7 @@ struct DarkBackground<S: Shape>: View {
             } else {
                 shape
                     .fill(LinearGradient(Color.darkStart, Color.darkEnd))
-                    .overlay(shape.stroke(Color.darkEnd, lineWidth: 4))
+                    .overlay(shape.stroke(Color.darkEnd, lineWidth: 2))
                     .shadow(color: Color.darkStart, radius: 10, x: -10, y: -10)
                     .shadow(color: Color.darkEnd, radius: 10, x: 10, y: 10)
             }
